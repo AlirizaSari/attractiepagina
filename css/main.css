@@ -176,8 +176,20 @@ table{
 th{
     text-align: left;
 }
-
-
+.attracties{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 20px; 
+  grid-auto-flow: inherit;
+}
+.large{
+    grid-row: span 2;
+}
+.attractie img{
+  width: 100%;
+  height: 200px;
+  Object-fit: cover;
+}
 
 
 
