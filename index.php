@@ -37,15 +37,24 @@ require_once 'admin/backend/config.php';
                 <?php foreach($rides as $ride): ?>
                     <div class="attractie <?php if($ride['fast_pass']) echo "large"; ?>">
                         <img src="img/attracties/<?php echo $ride['img_file']; ?>" alt="<?php echo $ride['title']; ?>">
-                        <div class="attractie-info">
-                            <p class="themeland"><?php echo $ride['themeland']; ?></p>
-                            <h2><?php echo $ride['title']; ?></h2>
-                            <p class="description"><?php echo $ride['description']; ?></p>
-                            <p class="min-length"><span><?php echo $ride['min_length']; ?>cm</span> minimale lengte</p>
+                        <div class="attractie-onder">
+                            <div class="attractie-info">
+                                <p class="themeland"><?php echo $ride['themeland']; ?></p>
+                                <h2><?php echo $ride['title']; ?></h2>
+                                <p class="description"><?php echo $ride['description']; ?></p>
+                                <p class="min-length"><span><?php echo $ride['min_length']; ?>cm</span> minimale lengte</p>
+                            </div>
+                            <?php if($ride['fast_pass']): ?>
+                            <div class="fast-pass">
+                                <p>Deze attractie is allen te bezoeken met een fast-pass</p>
+                                <p>Boek nu en sla de wachtrij over:</p>
+                                <button>Fast Pass</button>
+                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            </div>    
+                <?php endforeach; ?>            
+            </div>         
         </main>
     </div>
 
