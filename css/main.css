@@ -200,11 +200,29 @@ th{
   justify-content: space-between;
   min-height: calc(100%-200%);
 }
+.attractie-info{
+  padding: 10px;
+}
 .large .attractie-info .fast-pass{
   width: 50%;
 }
-.attractie-info{
-  padding: 20px;
+.fast-pass{
+  background-color: white;
+}
+@media only screen and (max-width: 1280px){
+  .attracties{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 900px){
+  .container.content{
+    display: block;
+  }
+}
+@media only screen and (max-width: 700px){
+  .attracties{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 
