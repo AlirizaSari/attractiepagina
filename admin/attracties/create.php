@@ -60,6 +60,7 @@ if(!isset($_SESSION['user_id']))
                 <label for="fast_pass">Voor deze attractie is een FAST PASS nodig.</label>
             </div>
             <div class="form-group">
+                <label for="description">Informatie:</label>
                 <textarea name="description" id="description" class="form-input" cols="30" rows="10"></textarea>
             </div>
 

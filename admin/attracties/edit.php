@@ -72,6 +72,7 @@ if(!isset($_SESSION['user_id']))
                 <label for="fast_pass">Voor deze attractie is een FAST PASS nodig.</label>
             </div>
             <div class="form-group">
+                <label for="description">Informatie:</label>
                 <textarea name="description"><?php echo $ride['description'];?></textarea>
             </div>
 
