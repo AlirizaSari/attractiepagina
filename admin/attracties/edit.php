@@ -58,6 +58,10 @@ if(!isset($_SESSION['user_id']))
                 </select>
             </div>
             <div class="form-group">
+                <label for="min_lengte">Min.Lengte:</label>
+                <input type="number" name="min_lengte" id="min_lengte" class="form-input" value="<?php echo $ride['min_lengte']; ?>">
+            </div>
+            <div class="form-group">
                 <label for="img_file">Afbeelding:</label>
                 <img src="<?php echo $base_url . "/img/attracties/" . $ride['img_file']; ?>" alt="attractiefoto" style="max-width: 120px;">
                 <input type="file" name="img_file" id="img_file" class="form-input">
@@ -66,6 +70,9 @@ if(!isset($_SESSION['user_id']))
                 <label for="fast_pass">FAST PASS:</label>
                 <input type="checkbox" name="fast_pass" id="fast_pass" <?php if($ride['fast_pass']) echo 'checked'; ?>>
                 <label for="fast_pass">Voor deze attractie is een FAST PASS nodig.</label>
+            </div>
+            <div class="form-group">
+                <textarea name="description"><?php echo $ride['description'];?></textarea>
             </div>
 
             <input type="submit" value="Attracties aanpassen">

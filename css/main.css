@@ -202,12 +202,14 @@ th{
 }
 .attractie-info{
   padding: 10px;
+  background-color: #F8F8FF;
 }
 .large .attractie-info .fast-pass{
   width: 50%;
 }
 .fast-pass{
   background-color: white;
+  text-align: center;
 }
 @media only screen and (max-width: 1280px){
   .attracties{

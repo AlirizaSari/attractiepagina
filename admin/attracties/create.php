@@ -47,6 +47,10 @@ if(!isset($_SESSION['user_id']))
                 </select>
             </div>
             <div class="form-group">
+                <label for="min_lengte">Min.Lengte:</label>
+                <input type="number" name="min_lengte" id="min_lengte">
+            </div>
+            <div class="form-group">
                 <label for="img_file">Afbeelding:</label>
                 <input type="file" name="img_file" id="img_file" class="form-input">
             </div>
@@ -54,6 +58,9 @@ if(!isset($_SESSION['user_id']))
                 <label for="fast_pass">FAST PASS:</label>
                 <input type="checkbox" name="fast_pass" id="fast_pass">
                 <label for="fast_pass">Voor deze attractie is een FAST PASS nodig.</label>
+            </div>
+            <div class="form-group">
+                <textarea name="description" id="description" class="form-input" cols="30" rows="10"></textarea>
             </div>
 
             <input type="submit" value="Attractie aanmaken">
